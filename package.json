@@ -1,0 +1,15 @@
+{
+  "name": "fbun",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "dependencies": {
+    "@types/lodash": "^4.14.198",
+    "lodash": "4.17.21"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
