@@ -53,9 +53,9 @@ const flatObject = (
 };
 
 (async () => {
-  console.time("bun");
   const stub = Bun.file("./stub.json");
   const stubJson = await stub.json();
+  console.time("bun");
   flatObject(stubJson);
   console.timeEnd("bun");
 })();

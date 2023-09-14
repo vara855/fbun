@@ -45,10 +45,10 @@ const flatObject = (obj = {}, concatenate = ".", maxArrayElements) => {
   }, {});
 };
 (async () => {
-  console.time("node");
   const file = await fs.readFile("./stub.json");
   //   const stub = Bun.file("./stub.json");
   const stubJson = JSON.parse(file);
+  console.time("node");
   flatObject(stubJson);
   console.timeEnd("node");
 })();
